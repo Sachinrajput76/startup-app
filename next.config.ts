@@ -1,6 +1,8 @@
 const nextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ? '/startup-app' : '/startup-app',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/startup-app/' : '/startup-app',
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/startup-app' : '', // Use '/startup-app' in production mode
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/startup-app/' : '', // Use '/startup-app/' in production
+  trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
