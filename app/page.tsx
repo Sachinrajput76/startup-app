@@ -1,3 +1,5 @@
+import LinkComponent from "@/components/link-components";
+
 export default function HomePage() {
   return (
     <div style={{ padding: '20px' }}>
@@ -5,7 +7,7 @@ export default function HomePage() {
       <p>
         This app demonstrates a simple registration flow using Next.js with the `app` directory.
       </p>
-      <a href="/register">Get Started</a>
+      <LinkComponent path="/register" />
     </div>
   );
 }
