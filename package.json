@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "start": "next start",
     "build": "set NEXT_PUBLIC_BASE_PATH=/startup-app && next build",
-    "deploy": "npm run build && git push",
+    "deploy": "npm run build && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
